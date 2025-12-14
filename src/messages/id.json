@@ -1,0 +1,54 @@
+{
+  "Navigation": {
+    "bookNow": "Pesan Sekarang",
+    "dashboard": "Dasbor",
+    "adminDashboard": "Dasbor Admin",
+    "employeePortal": "Portal Karyawan"
+  },
+  "HomePage": {
+    "badge": "Platform pemesanan multi-tenant",
+    "title": "Pemesanan cerdas untuk",
+    "titleHighlight": " layanan mobile",
+    "subtitle": "Sistem pemesanan lengkap yang dirancang untuk bisnis yang melayani di lokasi pelanggan. Perhitungan waktu perjalanan otomatis, penjadwalan tim, dan pengalaman pelanggan yang mulus.",
+    "bookService": "Pesan Layanan",
+    "registerBusiness": "Daftarkan Bisnis Anda",
+    
+    "featuresTitle": "Semua yang Anda butuhkan untuk mengelola pemesanan",
+    "featuresSubtitle": "Dibuat khusus untuk bisnis layanan yang beroperasi di lokasi pelanggan",
+    
+    "feature1Title": "Penjadwalan Cerdas",
+    "feature1Desc": "Sistem pemesanan cerdas yang mempertimbangkan waktu perjalanan dan ketersediaan",
+    "feature2Title": "Sadar Perjalanan",
+    "feature2Desc": "Perhitungan waktu perjalanan otomatis antar janji temu",
+    "feature3Title": "Manajemen Tim",
+    "feature3Desc": "Kelola beberapa karyawan dengan jadwal dan layanan individual",
+    "feature4Title": "Multi-Tenant",
+    "feature4Desc": "Data perusahaan terisolasi dengan kontrol akses berbasis peran",
+    
+    "howItWorksTitle": "Cara kerjanya",
+    "step1Title": "Pilih Layanan",
+    "step1Desc": "Pilih dari layanan yang tersedia dan pilih profesional pilihan Anda",
+    "step2Title": "Pilih Waktu",
+    "step2Desc": "Lihat hanya slot yang tersedia yang memperhitungkan waktu perjalanan antar janji temu",
+    "step3Title": "Konfirmasi Pemesanan",
+    "step3Desc": "Masukkan detail dan alamat Anda, lalu terima konfirmasi instan",
+    
+    "travelTitle": "Perhitungan Waktu Perjalanan Cerdas",
+    "travelDesc": "Sistem kami secara otomatis menghitung jarak berkendara antar janji temu menggunakan geolokasi. Ketika pelanggan memesan, kami menambahkan durasi layanan ditambah estimasi waktu perjalanan (dengan buffer yang dapat dikonfigurasi) untuk memastikan karyawan tidak pernah dijadwalkan ganda dengan jadwal yang tidak mungkin.",
+    "travelLabel1": "Perhitungan Jarak",
+    "travelValue1": "Formula Haversine untuk akurasi",
+    "travelLabel2": "Buffer Perjalanan",
+    "travelValue2": "Margin keamanan yang dapat dikonfigurasi",
+    "travelLabel3": "Slot Real-time",
+    "travelValue3": "Hanya menampilkan waktu yang benar-benar tersedia",
+    
+    "ctaTitle": "Siap untuk menyederhanakan pemesanan Anda?",
+    "ctaSubtitle": "Bergabunglah dengan bisnis yang mempercayai platform kami untuk kebutuhan penjadwalan mereka",
+    "createCompany": "Buat Perusahaan Anda",
+    "viewDemo": "Lihat Demo Pemesanan"
+  },
+  "LanguageSwitcher": {
+    "english": "Inggris",
+    "indonesian": "Indonesia"
+  }
+}

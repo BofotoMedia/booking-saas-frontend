@@ -1,2 +1,1 @@
-# booking-saas-frontend
-Frontend application for Booking SaaS built with Next.js
+Booking Saas Frontend Next.JS
