@@ -1,0 +1,42 @@
+{
+    "protected": {
+        "homePage": "Home Page",
+        "calendar": {
+            "allEmployees": "All Employees"
+        }
+    },
+    "nav" : {
+        "groupMenu": {
+            "groupMenu": "Group Menu",
+            "single": "Menu Single",
+            "collapse": {
+                "collapse": "Menu Collapse",
+                "item1": "Menu 1",
+                "item2": "Menu 2"
+            }
+        },
+        "singleMenuItem": "Menu Single",
+        "collapseMenu": {
+            "collapseMenu": "Menu Collapse",
+            "item1": "Menu 1",
+            "item2": "Menu 2"
+        },
+        "home": "Home",
+        "calendar": "Calendar",
+        "services": "Services",
+        "jobs": "Jobs",
+        "employees": "Employees",
+        "bookingPages": "Booking Pages",
+        "customers": "Customers",
+        "billing": "Billing",
+        "myCompany": "My Company",
+        "integrations": "Integrations",
+        "settings": "Settings"
+    },
+    "footer": {
+        "copyright": "Copyright",
+        "allRightsReserved": "All rights reserved.",
+        "termsAndConditions": "Term & Conditions",
+        "privacyAndPolicy": "Privacy & Policy"
+    }
+}

@@ -1,0 +1,42 @@
+{
+    "protected": {
+        "homePage": "Hemside",
+        "calendar": {
+            "allEmployees": "alla anställda"
+        }
+    },
+    "nav" : {
+        "groupMenu": {
+            "groupMenu": "Gruppmeny",
+            "single": "Ett menyobjekt",
+            "collapse": {
+                "collapse": "Kollaps meny",
+                "item1": "Menyobjekt 1",
+                "item2": "Menyobjekt 2"
+            }
+        },
+        "singleMenuItem": "Ett menyobjekt",
+        "collapseMenu": {
+            "collapseMenu": "Kollaps meny",
+            "item1": "Menyobjekt 1",
+            "item2": "Menyobjekt 2"
+        },
+        "home": "Hem",
+        "calendar": "Kalender",
+        "services": "Tjänster",
+        "jobs": "Jobb",
+        "employees": "Anställda",
+        "bookingPages": "Boknings sidor",
+        "customers": "Kunder",
+        "billing": "Fakturering",
+        "myCompany": "Min företag",
+        "integrations": "Integrationer",
+        "settings": "Inställningar"
+    },
+    "footer": {
+        "copyright": "Copyright",
+        "allRightsReserved": "Alla rättigheter reserverade.",
+        "termsAndConditions": "Villkor och villkor",
+        "privacyAndPolicy": "Personuppgifter och politik"
+    }
+}

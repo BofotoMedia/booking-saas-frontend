@@ -1,0 +1,42 @@
+{
+    "protected": {
+        "homePage": "Beranda",
+        "calendar": {
+            "allEmployees": "Semua Pekerja"
+        }
+    },
+    "nav" : {
+        "groupMenu": {
+            "groupMenu": "Grup Menu",
+            "single": "Menu Objek Satu",
+            "collapse": {
+                "collapse": "Menu Kollaps",
+                "item1": "Menu Objek 1",
+                "item2": "Menu Objek 2"
+            }
+        },
+        "singleMenuItem": "Menu Objek Satu",
+        "collapseMenu": {
+            "collapseMenu": "Menu Kollaps",
+            "item1": "Menu Objek 1",
+            "item2": "Menu Objek 2"
+        },
+        "home": "Beranda",
+        "calendar": "Kalendar",
+        "services": "Layanan",
+        "jobs": "Pekerjaan",
+        "employees": "Karyawan",
+        "bookingPages": "Halaman Booking",
+        "customers": "Pelanggan",
+        "billing": "Tagihan",
+        "myCompany": "Perusahaan Saya",
+        "integrations": "Integrasi",
+        "settings": "Pengaturan"
+    },
+    "footer": {
+        "copyright": "Hak Cipta",
+        "allRightsReserved": "Hak cipta dilindungi.",
+        "termsAndConditions": "Syarat & Ketentuan",
+        "privacyAndPolicy": "Kebijakan Privasi"
+    }
+}
