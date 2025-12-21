@@ -206,7 +206,7 @@ const ServiceDialog = ({ isOpen, onClose, onSave, service, categories }: Service
                 <div className="flex gap-2 mt-6">
                     <Button
                         block
-                        variant="outline"
+                        variant="default"
                         onClick={handleClose}
                     >
                         Cancel

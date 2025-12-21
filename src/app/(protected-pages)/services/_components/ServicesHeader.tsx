@@ -7,6 +7,7 @@ import CategoryDialog from './CategoryDialog'
 import ServiceDialog from './ServiceDialog'
 import AddonsDialog from './AddonsDialog'
 import { useServicesStore } from '../_store/servicesStore'
+import { Category } from '../types'
 
 const ServicesHeader = () => {
     const [categoryDialogOpen, setCategoryDialogOpen] = useState(false)
@@ -31,8 +32,11 @@ const ServicesHeader = () => {
         deleteAdditionalInfo,
     } = useServicesStore()
 
-    const handleAddCategory = (data: Parameters<typeof addCategory>[0]) => {
-        addCategory(data)
+    const handleAddCategory = (data: Omit<Category, 'id' | 'services'>) => {
+        addCategory({
+            ...data,
+            services: []
+        })
         setCategoryDialogOpen(false)
     }
 
@@ -56,7 +60,7 @@ const ServicesHeader = () => {
                         size="sm"
                         icon={<TbPlus />}
                         onClick={() => setCategoryDialogOpen(true)}
-                        variant="outline"
+                        variant="default"
                     >
                         Add Category
                     </Button>
@@ -71,7 +75,7 @@ const ServicesHeader = () => {
                         size="sm"
                         icon={<TbPlus />}
                         onClick={() => setAddonsDialogOpen(true)}
-                        variant="outline"
+                        variant="default"
                     >
                         Manage Add-ons
                     </Button>

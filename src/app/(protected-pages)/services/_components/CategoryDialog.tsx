@@ -43,7 +43,6 @@ const CategoryDialog = ({ isOpen, onClose, onSave, category }: CategoryDialogPro
             name: formData.name,
             count: category?.count || 0,
             step: formData.step || undefined,
-            services: [],
         })
 
         handleClose()
@@ -96,7 +95,7 @@ const CategoryDialog = ({ isOpen, onClose, onSave, category }: CategoryDialogPro
                 <div className="flex gap-2 mt-6">
                     <Button
                         block
-                        variant="outline"
+                        variant="default"
                         onClick={handleClose}
                     >
                         Cancel

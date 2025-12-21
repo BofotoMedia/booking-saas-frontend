@@ -202,7 +202,7 @@ const AddonsDialog = ({
                                                 </Button>
                                                 <Button
                                                     size="xs"
-                                                    variant="outline"
+                                                    variant="default"
                                                     onClick={() => setEditingItem(null)}
                                                 >
                                                     Cancel
@@ -214,7 +214,7 @@ const AddonsDialog = ({
                                                 <div className="flex gap-1">
                                                     <Button
                                                         size="xs"
-                                                        variant="outline"
+                                                        variant="default"
                                                         icon={<TbPencil size={14} />}
                                                         onClick={() =>
                                                             setEditingItem({ old: item, new: item })
@@ -222,7 +222,7 @@ const AddonsDialog = ({
                                                     />
                                                     <Button
                                                         size="xs"
-                                                        variant="outline"
+                                                        variant="default"
                                                         customColorClass={() =>
                                                             'hover:border-red-500 hover:ring-red-500'
                                                         }

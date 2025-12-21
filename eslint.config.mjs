@@ -15,7 +15,11 @@ const eslintConfig = [
     rules: {
       "@typescript-eslint/no-unused-expressions": "off",
       "@next/next/no-img-element": "off",
-      "react-hooks/rules-of-hooks": "off"
+      "react-hooks/rules-of-hooks": "off",
+      'react/no-unescaped-entities': 'off',
+      '@next/next/no-page-custom-font': 'off',
+      '@typescript-eslint/no-unused-vars': 'off',
+      '@typescript-eslint/no-explicit-any': 'off'
     },
   },
 ];

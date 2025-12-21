@@ -102,7 +102,7 @@ const CategorySection = ({ category }: CategorySectionProps) => {
                             {...provided.droppableProps}
                             className={`ml-8 mt-2 ${snapshot.isDraggingOver ? 'bg-blue-50 rounded-lg p-2' : ''}`}
                         >
-                            {services.length > 0 ? (
+                            {services && services.length > 0 ? (
                                 services.map((service, index) => (
                                     <ServiceItem 
                                         key={service.id} 
