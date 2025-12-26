@@ -1,5 +1,6 @@
 import authRoute from './authRoute'
 import type { Routes } from '@/@types/routes'
+import { lazy } from 'react'
 
 export const protectedRoutes: Routes = {
     '/home': {
@@ -24,6 +25,8 @@ export const protectedRoutes: Routes = {
         meta: {
             pageBackgroundType: 'plain',
             pageContainerType: 'contained',
+            header: {
+            },
         },
     },
 }

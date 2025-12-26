@@ -1,54 +1,33 @@
-import {
-    PiHouseLineDuotone,
-    PiArrowsInDuotone,
-    PiBookOpenUserDuotone,
-    PiBookBookmarkDuotone,
-    PiAcornDuotone,
-    PiBagSimpleDuotone,
-} from 'react-icons/pi'
 import { 
-    GiAutoRepair,
-    GiWallet
-} from "react-icons/gi";
-import { 
-    MdHomeRepairService 
-} from "react-icons/md";
-import { 
-    FaUsers,
-    FaRegAddressBook,
-    FaCog,
-    FaCalendarAlt
-} from "react-icons/fa";
-import { 
-    TbBuildingCog,
-    TbCalendarPlus
-} from "react-icons/tb";
-import { 
-    FaArrowRightFromBracket 
-} from "react-icons/fa6";
+    LuWarehouse,
+    LuCalendarMinus2,
+    LuHandHeart,
+    LuBriefcaseBusiness,
+    LuUsers,
+    LuFilePlus,
+    LuCircleUser,
+    LuWallet,
+    LuBuilding,
+    LuArrowRightFromLine,
+    LuCog,
+} from "react-icons/lu";
 
 import type { JSX } from 'react'
 
 export type NavigationIcons = Record<string, JSX.Element>
 
 const navigationIcon: NavigationIcons = {
-    home: <PiHouseLineDuotone />,
-    calendar: <FaCalendarAlt />,
-    services: <GiAutoRepair />,
-    jobs: <MdHomeRepairService />,
-    employees: <FaUsers />,
-    bookingPages: <TbCalendarPlus />,
-    customers: <FaRegAddressBook />,
-    billing: <GiWallet />,
-    myCompany: <TbBuildingCog />,
-    integrations: <FaArrowRightFromBracket />,
-    settings: <FaCog />,
-
-    singleMenu: <PiAcornDuotone />,
-    collapseMenu: <PiArrowsInDuotone />,
-    groupSingleMenu: <PiBookOpenUserDuotone />,
-    groupCollapseMenu: <PiBookBookmarkDuotone />,
-    groupMenu: <PiBagSimpleDuotone />,
+    home: <LuWarehouse />,
+    calendar: <LuCalendarMinus2 />,
+    services: <LuHandHeart />,
+    jobs: <LuBriefcaseBusiness />,
+    employees: <LuUsers />,
+    bookingPages: <LuFilePlus />,
+    customers: <LuCircleUser />,
+    billing: <LuWallet />,
+    myCompany: <LuBuilding />,
+    integrations: <LuArrowRightFromLine />,
+    settings: <LuCog />,
 }
 
 export default navigationIcon

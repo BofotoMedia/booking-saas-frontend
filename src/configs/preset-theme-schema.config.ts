@@ -93,11 +93,12 @@ const orangeTheme: ThemeVariables = {
 }
 
 const presetThemeSchemaConfig: Record<string, ThemeVariables> = {
-    default: defaultTheme,
-    dark: darkTheme,
-    green: greenTheme,
-    purple: purpleTheme,
-    orange: orangeTheme,
+    default: greenTheme,
+    // default: defaultTheme,
+    // dark: darkTheme,
+    // green: greenTheme,
+    // purple: purpleTheme,
+    // orange: orangeTheme,
 }
 
 export default presetThemeSchemaConfig

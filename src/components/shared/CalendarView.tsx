@@ -76,7 +76,7 @@ const CalendarView = (props: CalendarViewProps) => {
     const calendarRef = useRef<FullCalendar>(null)
 
     useEffect(() => {
-        const toolbar = document.querySelector('.fc-toolbar-chunk:last-child')
+        const toolbar = document.querySelector('.fc-toolbar-chunk:first-child')
         if (toolbar && selectContainerRef.current) {
             toolbar.innerHTML = ''
             toolbar.appendChild(selectContainerRef.current)
@@ -106,12 +106,12 @@ const CalendarView = (props: CalendarViewProps) => {
             </div>
 
             <FullCalendar
-                initialView="timeGridWeek"
+                initialView="dayGridMonth"
                 ref={calendarRef}
                 headerToolbar={{
-                    left: 'title,prev,next',
-                    center: 'dayGridMonth,timeGridWeek,timeGridDay',
-                    right: '',
+                    left: '',
+                    center: '',
+                    right: 'dayGridMonth,timeGridWeek,timeGridDay prev,next',
                 }}
                 eventContent={(arg) => {
                     const { extendedProps } = arg.event

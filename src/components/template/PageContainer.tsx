@@ -151,7 +151,7 @@ const PageContainer = (props: PageContainerProps) => {
                     className={classNames(
                         defaultClass,
                         pageBackgroundType === 'plain' &&
-                            'bg-white dark:bg-gray-900',
+                            'dark:bg-gray-900',
                     )}
                 >
                     <main className="h-full">

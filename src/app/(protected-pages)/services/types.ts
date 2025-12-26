@@ -1,33 +1,42 @@
-export type Service = {
+export interface Comment {
     id: string
     name: string
-    duration: number
-    hasRecurring: boolean
-    prices: {
-        A?: number
-        B?: number
-        C?: number
-    }
-    addons?: string[]
-    disabled?: boolean
-    noCategory?: boolean
+    src: string
+    message: string
+    date: number
 }
 
-export type Category = {
+export type Member = {
     id: string
     name: string
-    count: number
-    step?: string
-    addons?: string[]
-    services: Service[]
+    img: string
+}
+
+export type ServiceItem = {
+    id: string
+    name: string
+    duration: number // in minutes
+    prices: number[] // array of prices
+    addons: string[]
+    image?: string
+    checked: boolean
+}
+
+export type ServiceCategory = {
+    id: string
+    name: string
+    items: ServiceItem[]
+    expanded: boolean
+}
+
+export type Members = Member[]
+
+export type ProjectMembers = {
+    participantMembers: Members
+    allMembers: Members
 }
 
 export type ServicesData = {
-    categories: Category[]
-    disabledServices: Service[]
-    serviceAddons: string[]
-    bookingAddons: string[]
-    additionalInfo: string[]
+    categories: ServiceCategory[]
+    disabledServices: ServiceItem[]
 }
-
-export type AddonType = 'service' | 'booking' | 'info'

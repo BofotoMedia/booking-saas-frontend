@@ -1,131 +1,127 @@
-export type Service = {
+export type ServiceItem = {
     id: string
     name: string
-    duration: number
-    hasRecurring: boolean
-    prices: {
-        A?: number
-        B?: number
-        C?: number
-    }
-    addons?: string[]
-    disabled?: boolean
-    noCategory?: boolean
+    duration: number // in minutes
+    prices: number[] // array of prices
+    addons: string[]
+    image?: string
+    checked: boolean
 }
 
-export type Category = {
+export type ServiceCategory = {
     id: string
     name: string
-    count: number
-    step?: string
-    addons?: string[]
-    services: Service[]
+    items: ServiceItem[]
+    expanded: boolean
 }
 
-export type ServicesData = {
-    categories: Category[]
-    disabledServices: Service[]
-    serviceAddons: string[]
-    bookingAddons: string[]
-    additionalInfo: string[]
-}
+export const serviceAddons = [
+    'Extra Time on Location',
+    'Waste Removal',
+    'Sunset',
+    'Dusk',
+    'Night',
+    'Drone Photography',
+]
 
-export const servicesData: ServicesData = {
-    categories: [
-        {
-            id: 'cat-1',
-            name: 'Home Cleaning',
-            count: 3,
-            services: [
-                {
-                    id: 'srv-1',
-                    name: 'Window Cleaning',
-                    duration: 40,
-                    hasRecurring: true,
-                    prices: { A: 18.00, B: 14.00, C: 13.00 },
-                },
-                {
-                    id: 'srv-2',
-                    name: 'Room Cleaning',
-                    duration: 40,
-                    hasRecurring: true,
-                    prices: { A: 18.00 },
-                    addons: ['Item Relocation', 'Waste Removal'],
-                },
-                {
-                    id: 'srv-3',
-                    name: 'Floor Care',
-                    duration: 40,
-                    hasRecurring: true,
-                    prices: { A: 25.00, B: 20.00 },
-                },
-            ],
-        },
-        {
-            id: 'cat-2',
-            name: 'Home Cleaning 2',
-            count: 1,
-            step: 'Step 2',
-            addons: ['Extra Time on Location'],
-            services: [
-                {
-                    id: 'srv-4',
-                    name: 'Deep Cleaning',
-                    duration: 120,
-                    hasRecurring: false,
-                    prices: { A: 45.00, B: 40.00, C: 35.00 },
-                    addons: ['Extra Time on Location'],
-                },
-            ],
-        },
-        {
-            id: 'cat-3',
-            name: 'Business Cleaning',
-            count: 0,
-            services: [],
-        },
-        {
-            id: 'cat-4',
-            name: 'Moving Cleaning',
-            count: 0,
-            services: [],
-        },
-    ],
-    disabledServices: [
-        {
-            id: 'dis-srv-1',
-            name: 'Window Cleaning (Old)',
-            duration: 40,
-            hasRecurring: true,
-            prices: { A: 18.00, B: 14.00, C: 13.00 },
-            disabled: true,
-            noCategory: true,
-        },
-        {
-            id: 'dis-srv-2',
-            name: 'Carpet Cleaning',
-            duration: 60,
-            hasRecurring: true,
-            prices: { A: 30.00 },
-            disabled: true,
-        },
-    ],
-    serviceAddons: [
-        'Extra Time on Location',
-        'Waste Removal',
-        'Sunset',
-        'Dusk',
-        'Night',
-        'Drone Photography',
-    ],
-    bookingAddons: [
-        'Key Pickup / Key Return',
-        'Item Relocation',
-        'Express Service',
-    ],
-    additionalInfo: [
-        'Model name',
-        'Model Nr.',
-        'Description issue',
-    ],
+export const bookingAddons = [
+    'Key Pickup / Key Return',
+    'Item Relocation',
+    'Express Service',
+]
+
+export const additionalInfo = [
+    'Model name',
+    'Model Nr.',
+    'Description issue',
+]
+
+export const serviceCategories: ServiceCategory[] = [
+    {
+        id: 'home-cleaning-1',
+        name: 'Home Cleaning',
+        expanded: true,
+        items: [
+            {
+                id: 'window-cleaning-1',
+                name: 'Window Cleaning',
+                duration: 40,
+                prices: [18.00, 14.00, 13.00],
+                addons: ['Item Relocation', 'Waste Removal'],
+                image: '/img/logo/logo-light-streamline-backup.png',
+                checked: false,
+            },
+            {
+                id: 'window-cleaning-2',
+                name: 'Window Cleaning',
+                duration: 40,
+                prices: [18.00],
+                addons: [],
+                image: '/img/logo/logo-light-streamline-backup.png',
+                checked: false,
+            },
+            {
+                id: 'window-cleaning-3',
+                name: 'Window Cleaning',
+                duration: 40,
+                prices: [18.00, 14.00, 13.00],
+                addons: ['Item Relocation', 'Waste Removal'],
+                image: '/img/logo/logo-light-streamline-backup.png',
+                checked: false,
+            },
+        ],
+    },
+    {
+        id: 'home-cleaning-2',
+        name: 'Home Cleaning',
+        expanded: false,
+        items: [],
+    },
+    {
+        id: 'repair-appliances',
+        name: 'Repair of household appliances',
+        expanded: false,
+        items: [
+            {
+                id: 'repair-1',
+                name: 'Appliance Repair',
+                duration: 60,
+                prices: [25.00],
+                addons: ['Model Nr.', 'Description issue'],
+                image: '/img/logo/logo-light-streamline-backup.png',
+                checked: false,
+            },
+        ],
+    },
+    {
+        id: 'home-cleaning-3',
+        name: 'Home Cleaning',
+        expanded: false,
+        items: [],
+    },
+]
+
+export const disabledServices: ServiceItem[] = [
+    {
+        id: 'disabled-window-1',
+        name: 'Window Cleaning',
+        duration: 40,
+        prices: [18.00, 14.00, 13.00],
+        addons: [],
+        image: '/img/logo/logo-light-streamline-backup.png',
+        checked: false,
+    },
+    {
+        id: 'disabled-window-2',
+        name: 'Window Cleaning',
+        duration: 40,
+        prices: [18.00, 14.00, 13.00],
+        addons: [],
+        checked: false,
+    },
+]
+
+export const servicesData = {
+    categories: serviceCategories,
+    disabledServices: disabledServices,
 }
