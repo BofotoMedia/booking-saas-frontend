@@ -6,6 +6,7 @@ export type ServiceItem = {
     addons: string[]
     image?: string
     checked: boolean
+    currency?: string
 }
 
 export type ServiceCategory = {
@@ -15,41 +16,96 @@ export type ServiceCategory = {
     expanded: boolean
 }
 
-export const serviceAddons = [
-    'Extra Time on Location',
-    'Waste Removal',
-    'Sunset',
-    'Dusk',
-    'Night',
-    'Drone Photography',
+export type AddonItem = {
+    id: string
+    name: string
+    step2: boolean
+}
+
+export const serviceAddons: AddonItem[] = [
+    {
+        id: '1',
+        name: 'Extra Time on Location',
+        step2: false,
+    },
+    {
+        id: '2',
+        name: 'Waste Removal',
+        step2: false,
+    },
+    {
+        id: '3',
+        name: 'Sunset',
+        step2: false,
+    },
+    {
+        id: '4',
+        name: 'Dusk',
+        step2: false,
+    },
+    {
+        id: '5',
+        name: 'Night',
+        step2: false,
+    },
+    {
+        id: '6',
+        name: 'Drone Photography',
+        step2: false,
+    },
 ]
 
-export const bookingAddons = [
-    'Key Pickup / Key Return',
-    'Item Relocation',
-    'Express Service',
+export const bookingAddons: AddonItem[] = [
+    {
+        id: '1',
+        name: 'Key Pickup / Key Return',
+        step2: false,
+    },
+    {
+        id: '2',
+        name: 'Item Relocation',
+        step2: false,
+    },
+    {
+        id: '3',
+        name: 'Express Service',
+        step2: false,
+    },
 ]
 
-export const additionalInfo = [
-    'Model name',
-    'Model Nr.',
-    'Description issue',
+export const additionalInfo: AddonItem[] = [
+    {
+        id: '1',
+        name: 'Model name',
+        step2: true,
+    },
+    {
+        id: '2',
+        name: 'Model Nr.',
+        step2: true,
+    },
+    {
+        id: '3',
+        name: 'Description issue',
+        step2: true,
+    },
 ]
 
 export const serviceCategories: ServiceCategory[] = [
     {
         id: 'home-cleaning-1',
-        name: 'Home Cleaning',
+        name: 'Home Cleaning Service Primary',
         expanded: true,
         items: [
             {
                 id: 'window-cleaning-1',
-                name: 'Window Cleaning',
+                name: 'Window Cleaning Service Primary',
                 duration: 40,
                 prices: [18.00, 14.00, 13.00],
                 addons: ['Item Relocation', 'Waste Removal'],
                 image: '/img/logo/logo-light-streamline-backup.png',
                 checked: false,
+                currency: 'EUR',
             },
             {
                 id: 'window-cleaning-2',
@@ -59,6 +115,7 @@ export const serviceCategories: ServiceCategory[] = [
                 addons: [],
                 image: '/img/logo/logo-light-streamline-backup.png',
                 checked: false,
+                currency: 'EUR',
             },
             {
                 id: 'window-cleaning-3',
@@ -68,6 +125,7 @@ export const serviceCategories: ServiceCategory[] = [
                 addons: ['Item Relocation', 'Waste Removal'],
                 image: '/img/logo/logo-light-streamline-backup.png',
                 checked: false,
+                currency: 'EUR',
             },
         ],
     },
@@ -90,6 +148,7 @@ export const serviceCategories: ServiceCategory[] = [
                 addons: ['Model Nr.', 'Description issue'],
                 image: '/img/logo/logo-light-streamline-backup.png',
                 checked: false,
+                currency: 'EUR',
             },
         ],
     },
@@ -110,6 +169,7 @@ export const disabledServices: ServiceItem[] = [
         addons: [],
         image: '/img/logo/logo-light-streamline-backup.png',
         checked: false,
+        currency: 'EUR',
     },
     {
         id: 'disabled-window-2',
@@ -118,6 +178,7 @@ export const disabledServices: ServiceItem[] = [
         prices: [18.00, 14.00, 13.00],
         addons: [],
         checked: false,
+        currency: 'EUR',
     },
 ]
 

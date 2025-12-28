@@ -29,7 +29,7 @@ const navigationConfig: NavigationTree[] = [
     },
     {
         key: 'services',
-        path: '/services',
+        path: '/services/overview',
         title: 'Services',
         translateKey: 'nav.services',
         icon: 'services',

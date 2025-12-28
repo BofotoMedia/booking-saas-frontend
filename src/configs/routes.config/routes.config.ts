@@ -19,7 +19,7 @@ export const protectedRoutes: Routes = {
             pageContainerType: 'contained',
         },
     },
-    '/services': {
+    '/services/overview': {
         key: 'services',
         authority: [],
         meta: {
@@ -27,6 +27,36 @@ export const protectedRoutes: Routes = {
             pageContainerType: 'contained',
             header: {
             },
+        },
+    },
+    '/services/service-details': {
+        key: 'service-details',
+        authority: [],
+        meta: {
+            pageBackgroundType: 'plain',
+            header: {
+                description:
+                    'Manage Service details.',
+                contained: true,
+            },
+            footer: false,
+        },
+    },
+    '/services/category-details': {
+        key: 'category-details',
+        authority: [],
+        meta: {
+            pageBackgroundType: 'plain',
+            header: {
+                contained: true,
+                title: lazy(
+                    () =>
+                        import(
+                            '@/app/(protected-pages)/services/category-details/_components/FormHeader'
+                        ),
+                )
+            },
+            footer: false,
         },
     },
 }
